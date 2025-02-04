@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+    font-family:  Arial, sans-serif;
+}
+
+header{
+    padding: 2rem;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.boton{
+    background-color: #4CAF50;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+main {
+    padding: 2rem;
+}
+
+.boton-crear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.coche-unico{
+    display: flex;
+    gap: 1rem;
+}
+
+.coche-unico * {
+    width: 10rem;
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
