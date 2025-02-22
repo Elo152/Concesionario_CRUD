@@ -21,12 +21,12 @@
                 <div class="card-body">
                     <h5 class="card-title">Detalles del Coche</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Marca: {{$coche->marca}}</li>
-                        <li class="list-group-item">Modelo: {{$coche->modelo}}</li>
-                        <li class="list-group-item">Color: {{$coche->color}}</li>
-                        <li class="list-group-item">Año: {{$coche->anyo}}</li>
-                        <li class="list-group-item">Matrícula: {{$coche->matricula}}</li>
-                        <li class="list-group-item">Precio: {{$coche->precio}}€</li>
+                        <li class="list-group-item"><b>Marca:</b> {{$coche->marca}}</li>
+                        <li class="list-group-item"><b>Modelo:</b> {{$coche->modelo}}</li>
+                        <li class="list-group-item"><b>Color:</b> {{$coche->color}}</li>
+                        <li class="list-group-item"><b>Año:</b> {{$coche->anyo}}</li>
+                        <li class="list-group-item"><b>Matrícula:</b> {{$coche->matricula}}</li>
+                        <li class="list-group-item"><b>Precio:</b> {{$coche->precio}}€</li>
                     </ul>
                 </div>
             </div>

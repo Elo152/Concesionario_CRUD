@@ -20,23 +20,25 @@
             <a href="{{route('registro')}}" class="boton"> Registrar un nuevo coche </a>
         </div>
         <h2>Listado de coches actuales</h2>
-        <div class="tabla">
-            <ul>
-                @foreach($coches as $coche)
-                    <div class="coche-unico">
-                        <li>{{$coche->marca }} {{$coche->modelo }}</li>
-                        <a href="{{route('mostrar', $coche->id)}}">Detalles del coche</a>
-                        <a href="{{route('editar', $coche->id)}}">Editar datos del coche</a>
+        <div class="tabla-container">
+            <div class="tabla">
+                <ul>
+                    @foreach($coches as $coche)
+                        <div class="coche-unico">
+                            <li>{{$coche->marca }} {{$coche->modelo }}</li>
+                            <a href="{{route('mostrar', $coche->id)}}">Detalles del coche</a>
+                            <a href="{{route('editar', $coche->id)}}">Editar datos del coche</a>
 
-                        <form action="{{ route('eliminar', $coche->id) }}" method="POST" style="display:inline;"
-                            onsubmit="return confirm('¿Estás seguro de que quieres eliminar este coche?');">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Eliminar coche</button>
-                        </form>
-                    </div>
-                @endforeach
-            </ul>
+                            <form action="{{ route('eliminar', $coche->id) }}" method="POST" style="display:inline;"
+                                onsubmit="return confirm('¿Estás seguro de que quieres eliminar este coche?');">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Eliminar coche</button>
+                            </form>
+                        </div>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </main>
     <footer>

@@ -16,19 +16,31 @@
         <a href="{{route('index')}}"> Volver al listado de coches </a>
     </header>
     <main>
-        <h2>Registro de un nuevo coche</h2>
-        <form action="{{ route(('guardar')) }}" method="post" class="form-register">
-            @csrf
-            <label for="marca">Marca</label>
-            <input type="text" name="marca" id="marca" required>
-            <label for="modelo">Modelo</label>
-            <input type="text" name="modelo" id="modelo" required>
-            <label for="color">Color</label>
-            <input type="text" name="color" id="color" required>
-            <label for="modelo">Matricula</label>
-            <input type="text" name="matricula" id="matricula" required>
-            <button type="submit">Registrar coche</button>
-        </form>
+        <div class="form-container">
+            <form action="{{ route(('guardar')) }}" method="post" class="form-register">
+                @csrf
+                <h2 class="titulo">Registrar nuevo coche</h2>
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca" required>
+
+                <label for="modelo">Modelo</label>
+                <input type="text" name="modelo" id="modelo" required>
+
+                <label for="color">Color</label>
+                <input type="text" name="color" id="color" required>
+
+                <label for="anyo">Año</label>
+                <input type="number" name="anyo" id="anyo" required>
+
+                <label for="modelo">Matricula</label>
+                <input type="text" name="matricula" id="matricula" required>
+
+                <label for="precio">Precio</label>
+                <input type="number" name="precio" id="precio" required>
+
+                <button type="submit">Registrar coche</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>&copy 2025 | Todos los derechos reservados</p>
