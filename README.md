@@ -11,6 +11,7 @@ Este proyecto es un CRUD (Crear, Leer, Actualizar, Eliminar) de coches para un c
 - Editar la información de un coche.
 - Eliminar un coche de la base de datos.
 
+--- 
 
 ## Instalación
 
@@ -33,7 +34,9 @@ Situarse en la carpeta del proyecto y ejecutar composer install
 
 Para crear la base de datos y las tablas necesarias, ejecutar el comando php artisan migrate. 
 
-En este proyecto hay datos de ejemplos cargados
+En este proyecto hay datos de ejemplos cargados.
+
+---
 
 ### Usar la aplicación
 
