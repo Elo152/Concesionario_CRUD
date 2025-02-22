@@ -14,7 +14,7 @@ class CocheController extends Controller{
 
    
     public function create(){
-        return view('registro');
+        return view('registrar');
     }
 
     
