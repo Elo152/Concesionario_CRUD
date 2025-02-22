@@ -18,7 +18,7 @@ Para instalar el proyecto, sigue los siguientes pasos:
 
 ### Clonar el repositorio
 
-git clone https://github.com/ELo152/Concesionario-CRUD.git
+git clone https://github.com/Elo152/Concesionario-CRUD.git
 
 ### Configuración del entorno
 
