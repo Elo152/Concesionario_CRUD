@@ -36,8 +36,6 @@ Para crear la base de datos y las tablas necesarias, ejecutar el comando php art
 
 En este proyecto hay datos de ejemplos cargados.
 
----
-
 ### Usar la aplicación
 
 1. Iniciar el servidor de desarrollo ejecutando el comando php artisan serve
@@ -45,3 +43,5 @@ En este proyecto hay datos de ejemplos cargados.
 3. Generar una key si es necesario con el comando php artisan key:generate
 4. Volver a arrancar el proyecto si es necesario con el comando php artisan serve
 5. Acceder a la dirección http://localhost:8000/coches
+
+---
